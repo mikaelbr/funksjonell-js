@@ -68,7 +68,7 @@ class: center, middle
 ---
 class: center, middle
 
-# funksjonen som byggesten
+## funksjonen som byggesten
 
 ???
 
@@ -79,40 +79,44 @@ Funksjoner er et langt mer finkornet abstraksjonsnvå enn klasser eller moduler;
 ---
 class: middle
 
-## Eksempel
+### Nyttige egenskaper
+
+- Høyere ordens funksjoner
+- Anonyme funksjoner
+- Komponering av funksjoner
+- Partial application
+- Laziness
+
+???
 
 ```
 liste = []
-for element in annen_liste:
-    liste.append(operasjon(element))
+for el in annen_liste:
+    liste.append(fn(el))
 ```
 
 mot
 
 ```
-liste = map(operasjon, annen_liste)
+liste = map(fn, annen_liste)
 ```
+]
 
-???
-
----
-class: middle
-
-- Høyere ordens funksjoner
-- Enkelt å komponere funksjoner
-- Partial application
-- Laziness
+```
+filter(a -> a.active, agents)
+```
+]
 
 ---
 class: middle, center
 
-# ikke-muterbar tilstand
+## ikke-muterbar tilstand
 
 ---
 class: middle
 
 .leftcol-medium[
-## "Negative features"
+### "Negative features"
 
 - ingen side-effekter
 - ingen (re)assignments
@@ -123,7 +127,7 @@ class: middle
 class: middle
 
 .leftcol-medium[
-## "Negative features"
+### "Negative features"
 
 - ingen side-effekter
 - ingen (re)assignments
@@ -131,7 +135,7 @@ class: middle
 ]
 
 .rightcol-medium[
-## Fordeler
+### Fordeler
 
 - enklere å teste
 - enklere å resonere med
