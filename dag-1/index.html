@@ -33,8 +33,117 @@ class: center, middle, inverse
 # **funksjonell<br>programmering**
 
 ---
+class: center, middle
 
-noe om hva funksjonell programmering er
+## funksjonelle språk
+
+vs
+
+## imperative språk
+
+
+???
+
+- Mange deler programmeringspråk inn i "funksjonelle språk" og "imperative" eller "ikke-funksonelle" språk.
+- Noen språk som typisk omtales som funksjonelle er Haskell, Lisp-er, F#, etc
+- Typisk imperative er C, Java, C#, Cobol, etc
+- Er JavaScript et funksjonelt språk?
+- I mine øyne er spørsmålet dårlig definert. "funksjonell programmering" er ikke et enten-eller konsept.
+
+---
+class: center, middle
+
+så, hva er 
+## funksjonell programmering?
+
+???
+
+Funksjonell programmering mer en måte å tenke og jobbe på. *Funksjonelle språk* er de som legger godt til rette for denne måten å jobbe. Imperative språk er språk som gjør det vanskelig å jobbe slik.
+
+---
+class: center, middle
+
+![Plot over ulike programmeringspråk plassert på aksene "funksjoner" og "tilstand"](img/plot-languages.png)
+
+---
+class: center, middle
+
+# funksjonen som byggesten
+
+???
+
+> *Functional programming is so called because its fundamental operation is the application of functions to arguments.*
+
+Funksjoner er et langt mer finkornet abstraksjonsnvå enn klasser eller moduler; Enklere å trekke ut som små byggesten, de små mønstrene vi gjentar og gjentar i koden
+
+---
+class: middle
+
+## Eksempel
+
+```
+liste = []
+for element in annen_liste:
+    liste.append(operasjon(element))
+```
+
+mot
+
+```
+liste = map(operasjon, annen_liste)
+```
+
+???
+
+---
+class: middle
+
+- Høyere ordens funksjoner
+- Enkelt å komponere funksjoner
+- Partial application
+- Laziness
+
+---
+class: middle, center
+
+# ikke-muterbar tilstand
+
+---
+class: middle
+
+.leftcol-medium[
+## "Negative features"
+
+- ingen side-effekter
+- ingen (re)assignments
+- ingen eksplisitt kontrollflyt
+]
+
+---
+class: middle
+
+.leftcol-medium[
+## "Negative features"
+
+- ingen side-effekter
+- ingen (re)assignments
+- ingen eksplisitt kontrollflyt
+]
+
+.rightcol-medium[
+## Fordeler
+
+- enklere å teste
+- enklere å resonere med
+- enkelt å parallellisere
+]
+
+
+---
+class: middle
+
+> **Hughes, John. [Why functional programming matters.]( http://www.cse.chalmers.se/edu/year/2010/course/TDA341/Papers/whyfp.pdf)**   
+> The computer journal 32.2 (1989): 98-107.
 
 ---
 class: center, middle, inverse
